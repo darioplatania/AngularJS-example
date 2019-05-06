@@ -4,7 +4,7 @@ This repository contains an example of using angularJS and nodeJS for creating a
 
 ## Installation
 
-Download nodeJS for your machine (https://nodejs.org/it/download/)
+Download nodeJS for your machine (https://nodejs.org/it/download/).
 Use the package manager [npm](https://pip.pypa.io/en/stable/) to install node modules.
 
 ```bash
@@ -17,7 +17,7 @@ connect, serve-static, json-server.
 ## Usage
 N.B. this command running into UNIX release.
 
-Open two separate terminal and insert a command
+Open two separate terminal and insert a command:
 
 ```bash
 node server.js
