@@ -1,0 +1,15 @@
+{
+    "prodotti" : [
+
+        {"id":"1","categoria": "Sport","nome":"Sapone", "descrizione":"Sapone di Marsiglia", "prezzo":46},
+        {"id":"2","categoria": "Tempo libero","nome":"BagnoSchiuma", "descrizione":"Rovere ai frutti di Bosco", "prezzo":36},
+        {"id":"3","categoria": "Tecnologia","nome":"Telefono", "descrizione":"Galacsi one nio", "prezzo":120}
+
+    ],
+
+    "ordini" : [
+        
+    ]
+
+    
+}
