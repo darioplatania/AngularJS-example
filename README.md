@@ -15,7 +15,7 @@ This command install a package, and any packages that it depends on. In this stu
 connect, serve-static, json-server.
 
 ## Usage
-N.B. this command running into UNIX release.
+N.B. These commands were launched from a linux terminal.
 
 Open two separate terminal, go into serverJS folder and run a command:
 
