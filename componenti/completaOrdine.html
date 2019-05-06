@@ -1,0 +1,33 @@
+<div class="col-xs-8 col-xs-offset-1">
+    <h1>Inserisci i tuoi dati</h1>
+    <form name="ordineForm" novalidate ng-submit="inviaOrdine()">
+        <div class="form-group">
+            <label>Nome e Cognome</label>
+            <input class="form-control" 
+                   ng-model="ordine.utente" 
+                   name="utente" 
+                   required>
+            <span ng-show="ordineForm.utente.$invalid">Inserire Nome e Cognome
+            </span>
+        </div>
+        
+        <div class="form-group">
+            <label>Indirizzo</label>
+            <input class="form-control" 
+                   ng-model="ordine.indirizzo" name="indirizzo" 
+                   required>
+            <span ng-show="ordineForm.indirizzo.$invalid">Inserire Indirizzo
+            </span>
+        </div>
+        
+        <div class="form-group">
+            <label>Numero Carta</label>
+            <input class="form-control"
+                   ng-model="ordine.numeroCarta" name="numeroCarta" 
+                   required>
+            <span ng-show="ordineForm.numeroCarta.$invalid">Inserire Numero Carta
+            </span>
+        </div>        
+        <button class="btn btn-primary" ng-disabled="ordineForm.$invalid">Invia</button>
+    </form>
+</div>

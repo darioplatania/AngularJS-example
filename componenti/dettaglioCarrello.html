@@ -1,0 +1,35 @@
+<div class="col-xs-8 col-xs-offset-1">
+<h1>Dettaglio Carrello</h1>
+    <table class="table" ng-if= "dati.length > 0">
+      <thead>
+        <tr>
+          <th scope="col">Prodotto</th>
+          <th scope="col">Quantità</th>
+          <th scope="col">Prezzo</th>
+          <th scope="col">SubTotale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat = "riga in dati">
+            <td>{{riga.nome}}</td>
+            <td>{{riga.quantita}}</td>
+            <td>{{riga.prezzo | currency : '€'}}</td>
+            <td>{{riga.prezzo * riga.quantita | currency : '€'}}</td>
+        </tr>
+        <br><br>
+        <tr>
+          <th scope="col">Totale</th>
+          <th scope="col">{{totQuantita}}</th>
+          <th scope="col"></th>
+          <th scope="col">{{totPrezzo | currency : '€'}}</th>
+        </tr>
+      </tbody>
+    </table>
+    
+    <a ng-if= "dati.length == 0 || dati.length > 0" href="#!/prodotti" class="btn btn-success btn-xs">Continua con gli acquisti</a>
+    
+    <a  ng-if = "dati.length > 0" href="#!/completaOrdine" class="btn btn-primary btn-xs">Invia Ordine</a>
+    
+</div>
+
+

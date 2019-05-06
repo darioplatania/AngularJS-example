@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html ng-app="my-amazon">
+    <head>
+        <title>MyAmazonApp</title>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/index.js"></script>
+        <script src="js/filter.js"></script>
+        <script src="js/prodottiController.js"></script>
+        <script src="js/dettaglioCarrello.js"></script>
+        <script src="js/completaOrdine.js"></script>
+        <script src="carrello/carrelloController.js"></script>
+    </head>
+    
+    <body ng-controller="mainController">
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <!--usiamo l'ancora in cui passiamo cancelletto e punto esclamativo in modo che angular capisce che c'è da afre un routing -->
+                      <a href="#!/prodotti" class="navbar-brand">Amazon</a>
+                    </div>
+                        <div class="nav navbar-nav  navbar-text">
+                            <a href="#!/dettaglio-carrello">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> 
+                            </a>
+                        </div>
+                        <div class="nav navbar-nav  navbar-text">
+                            <indicatore-carrello></indicatore-carrello>
+                        </div>
+                </nav>
+              </div>
+          </div>
+          <!-- 
+            <div class="row" ng-include = "'componenti/prodotti.html'">
+           questo include in locale non funziona poichè chrome blocca la chiamata asicncrona HTTP che angular include fa verso il nostro file CORS             
+          </div>
+          -->  
+          <div class="row">
+            <ng-view></ng-view>
+          </div>
+      </div>
+    </body>
+</html>

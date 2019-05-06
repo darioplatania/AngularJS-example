@@ -1,0 +1,24 @@
+<div ng-controller="prodottiController">
+    <div class="col-xs-2 col-md-offset-1">
+      <input class="form-control" type="text" placeholder="Search" aria-label="Search" ng-model = "ricerca">                                       
+      <br>
+      <button class="btn btn-primary btn-block" ng-click="selezionaCategoria()">
+          Tutte le categorie
+      </button>
+      <button class="btn btn-primary btn-block" ng-click="selezionaCategoria(categoria)" ng-repeat= "categoria in productArray | DistinctValue : 'categoria' ">
+          {{categoria}}
+      </button>
+    </div>
+
+    <div class="col-xs-8">
+      <div class="well" ng-repeat = "product in productArray | filter : ricerca | filter : filtraProdotti">
+        <h4>{{product.nome}}</h4>
+        {{product.descrizione}}
+        <div class="pull-right">Prezzo: {{product.prezzo | currency:'€'}}
+        </div>
+          <button class="btn btn-default" ng-click = "aggiungi(product)">
+            <span class="glyphicon glyphicon-plus"></span>
+          </button>
+      </div>
+    </div>
+</div>
