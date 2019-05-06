@@ -17,7 +17,7 @@ connect, serve-static, json-server.
 ## Usage
 N.B. this command running into UNIX release.
 
-Open two separate terminal and insert a command:
+Open two separate terminal, go into serverJS folder and run a command:
 
 ```bash
 node server.js
@@ -27,7 +27,7 @@ node server.js
 json-server db.json
 ```
 
-Now open index.html and enjoy!
+Now open index.html with firefox and enjoy!
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
