@@ -1,15 +1,15 @@
 {
     "prodotti" : [
 
-        {"id":"1","categoria": "Sport","nome":"Sapone", "descrizione":"Sapone di Marsiglia", "prezzo":46},
-        {"id":"2","categoria": "Tempo libero","nome":"BagnoSchiuma", "descrizione":"Rovere ai frutti di Bosco", "prezzo":36},
-        {"id":"3","categoria": "Tecnologia","nome":"Telefono", "descrizione":"Galacsi one nio", "prezzo":120}
+        {"id":"1","categoria": "Sport","nome":"CR7 biography", "descrizione":"Book of CR7 career", "prezzo":46},
+        {"id":"2","categoria": "Free-Time","nome":"Pool", "descrizione":"A great pool to spend your free-time with a friends", "prezzo":36},
+        {"id":"3","categoria": "Tecnology","nome":"Phone", "descrizione":"A new mobile model", "prezzo":120}
 
     ],
 
     "ordini" : [
-        
+
     ]
 
-    
+
 }
